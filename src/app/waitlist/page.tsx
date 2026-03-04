@@ -5,16 +5,17 @@ import { Footer } from "@/components/organisms/Footer";
 
 export default function WaitlistPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200">
       <Navbar />
       <main className="flex-1 w-full relative pt-32 pb-24 overflow-hidden">
-        {/* Decorative Background Elements (Reduced opacity and size to prevent blending issues) */}
-        <div className="absolute inset-0 overflow-hidden -z-10 bg-slate-50 dark:bg-[#060B14] pointer-events-none">
-          <div className="absolute top-0 right-0 w-[60vw] max-w-[600px] aspect-square rounded-full bg-primary-400/15 blur-[120px] -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute top-[40%] left-0 w-[50vw] max-w-[500px] aspect-square rounded-full bg-secondary-400/15 blur-[100px] -translate-x-1/2" />
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 overflow-hidden -z-10 pointer-events-none w-full h-full">
+          {/* Subtle colored glow, positioned to the sides so it doesn't overlap text heavily */}
+          <div className="absolute top-0 right-0 w-[50vw] max-w-[500px] aspect-square rounded-full bg-primary-500/15 blur-[120px] -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-[50vw] max-w-[500px] aspect-square rounded-full bg-secondary-500/15 blur-[120px] translate-y-1/2 -translate-x-1/2" />
 
-          {/* Noise texture overlay */}
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMTQ4LCAxNjMsIDE4NCwgMC4xNSkiLz48L3N2Zz4=')] [mask-image:radial-gradient(ellipse_at_center,white,transparent_80%)] opacity-30 dark:opacity-10 mix-blend-overlay" />
+          {/* Modern faint mesh/grid pattern */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[24px_24px] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 w-full flex flex-col items-center relative z-10">

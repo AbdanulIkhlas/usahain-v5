@@ -10,28 +10,28 @@ const categories = [
     title: "Raw Materials",
     desc: "Reliable suppliers for food and beverage ingredients.",
     color:
-      "text-amber-500 bg-amber-100 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800/50",
+      "text-amber-600 bg-amber-100 dark:text-amber-400 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800",
   },
   {
     icon: <Wrench size={28} />,
     title: "Equipment",
     desc: "Affordable cooking and operational tools.",
     color:
-      "text-blue-500 bg-blue-100 dark:bg-blue-900/30 border-blue-200 dark:border-blue-800/50",
+      "text-blue-600 bg-blue-100 dark:text-blue-400 dark:bg-blue-900/30 border-blue-200 dark:border-blue-800",
   },
   {
     icon: <Truck size={28} />,
     title: "Booth & Stand",
     desc: "Durable carts, tents, and custom booth builders.",
     color:
-      "text-emerald-500 bg-emerald-100 dark:bg-emerald-900/30 border-emerald-200 dark:border-emerald-800/50",
+      "text-emerald-600 bg-emerald-100 dark:text-emerald-400 dark:bg-emerald-900/30 border-emerald-200 dark:border-emerald-800",
   },
   {
     icon: <Handshake size={28} />,
     title: "Franchisers",
     desc: "Trusted micro-franchise opportunities.",
     color:
-      "text-purple-500 bg-purple-100 dark:bg-purple-900/30 border-purple-200 dark:border-purple-800/50",
+      "text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-900/30 border-purple-200 dark:border-purple-800",
   },
 ];
 
@@ -49,10 +49,10 @@ export const PartnersSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-4">
             Curated <span className="text-gradient">Marketplace</span> (Mitra)
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400">
+          <p className="text-lg text-slate-600 dark:text-slate-300">
             We connect you directly with verified suppliers, eliminating the
             middleman and giving you the best prices to run your business
             sustainably.
@@ -63,7 +63,7 @@ export const PartnersSection = () => {
           {categories.map((cat, idx) => (
             <motion.div
               key={idx}
-              className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200 dark:hover:shadow-black/50 group"
+              className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 flex flex-col items-start transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -74,10 +74,10 @@ export const PartnersSection = () => {
               >
                 {cat.icon}
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
                 {cat.title}
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
                 {cat.desc}
               </p>
             </motion.div>

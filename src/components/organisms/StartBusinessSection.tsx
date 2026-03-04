@@ -9,7 +9,7 @@ export const StartBusinessSection = () => {
   return (
     <section
       id="start-business"
-      className="py-24 px-6 bg-slate-50 dark:bg-[#060B14] relative overflow-hidden"
+      className="py-24 px-6 bg-white dark:bg-slate-950 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
@@ -39,28 +39,28 @@ export const StartBusinessSection = () => {
                 {
                   icon: <Calculator size={20} />,
                   text: "Transparent Capital Estimation Tool",
-                  color: "text-primary-500",
-                  bg: "bg-primary-50 dark:bg-primary-900/20",
-                  border: "border-primary-100 dark:border-primary-800/50",
+                  color: "text-primary-600 dark:text-primary-400",
+                  bg: "bg-primary-50 dark:bg-primary-900/30",
+                  border: "border-primary-200 dark:border-primary-800",
                 },
                 {
                   icon: <Store size={20} />,
                   text: "Curated Booth & Equipment packages",
-                  color: "text-secondary-500",
-                  bg: "bg-secondary-50 dark:bg-secondary-900/20",
-                  border: "border-secondary-100 dark:border-secondary-800/50",
+                  color: "text-secondary-600 dark:text-secondary-400",
+                  bg: "bg-secondary-50 dark:bg-secondary-900/30",
+                  border: "border-secondary-200 dark:border-secondary-800",
                 },
                 {
                   icon: <MapPin size={20} />,
                   text: "Location Risk & Readiness analysis",
-                  color: "text-accent-500",
-                  bg: "bg-accent-50 dark:bg-accent-900/20",
-                  border: "border-accent-100 dark:border-accent-800/50",
+                  color: "text-accent-600 dark:text-accent-400",
+                  bg: "bg-accent-50 dark:bg-accent-900/30",
+                  border: "border-accent-200 dark:border-accent-800",
                 },
               ].map((item, idx) => (
                 <li
                   key={idx}
-                  className="flex items-center gap-4 text-slate-800 dark:text-slate-200 font-semibold"
+                  className="flex items-center gap-4 text-slate-800 dark:text-slate-100 font-semibold"
                 >
                   <div
                     className={`flex items-center justify-center w-12 h-12 rounded-xl shadow-sm border ${item.bg} ${item.color} ${item.border}`}
@@ -88,14 +88,14 @@ export const StartBusinessSection = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
             {/* Calculator Card UI */}
-            <div className="w-full max-w-[440px] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800/60 shadow-2xl overflow-hidden relative z-10">
-              <div className="bg-slate-50 dark:bg-slate-950 px-6 py-4 flex items-center border-b border-slate-200 dark:border-slate-800/60">
+            <div className="w-full max-w-[440px] bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-2xl overflow-hidden relative z-10">
+              <div className="bg-slate-50 dark:bg-slate-800 px-6 py-4 flex items-center border-b border-slate-200 dark:border-slate-700">
                 <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-700" />
-                  <div className="w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-700" />
-                  <div className="w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-700" />
+                  <div className="w-3 h-3 rounded-full bg-red-400" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-400" />
+                  <div className="w-3 h-3 rounded-full bg-green-400" />
                 </div>
-                <div className="flex-1 text-center text-xs font-bold text-slate-400 uppercase tracking-widest pl-4">
+                <div className="flex-1 text-center text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest pl-4">
                   Calculator
                 </div>
               </div>
@@ -110,16 +110,16 @@ export const StartBusinessSection = () => {
                     key={idx}
                     className="flex justify-between items-center group cursor-default"
                   >
-                    <div className="text-slate-500 dark:text-slate-400 font-medium group-hover:text-slate-800 dark:group-hover:text-slate-200 transition-colors">
+                    <div className="text-slate-500 dark:text-slate-400 font-medium group-hover:text-slate-800 dark:group-hover:text-white transition-colors">
                       {item.label}
                     </div>
-                    <div className="font-semibold text-slate-800 dark:text-slate-200">
+                    <div className="font-semibold text-slate-800 dark:text-slate-100">
                       {item.value}
                     </div>
                   </div>
                 ))}
 
-                <div className="h-px w-full bg-slate-100 dark:bg-slate-800 my-2" />
+                <div className="h-px w-full bg-slate-200 dark:bg-slate-700 my-2" />
 
                 <div className="flex justify-between items-center">
                   <div className="font-bold text-slate-900 dark:text-white text-lg">
@@ -130,8 +130,8 @@ export const StartBusinessSection = () => {
                   </div>
                 </div>
 
-                <div className="mt-4 p-5 bg-accent-50 dark:bg-accent-950/30 border border-accent-100 dark:border-accent-900/50 rounded-2xl flex items-center gap-4">
-                  <span className="font-bold text-sm text-accent-700 dark:text-accent-400">
+                <div className="mt-4 p-5 bg-accent-50 dark:bg-accent-900/30 border border-accent-200 dark:border-accent-800 rounded-2xl flex items-center gap-4">
+                  <span className="font-bold text-sm text-accent-700 dark:text-accent-300">
                     Readiness Score
                   </span>
                   <div className="flex-1 h-3 bg-accent-200/50 dark:bg-accent-900/50 rounded-full overflow-hidden">
@@ -146,7 +146,7 @@ export const StartBusinessSection = () => {
                       }}
                     />
                   </div>
-                  <span className="font-black text-accent-700 dark:text-accent-400">
+                  <span className="font-black text-accent-700 dark:text-accent-300">
                     85%
                   </span>
                 </div>

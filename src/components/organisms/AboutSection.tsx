@@ -7,7 +7,7 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-24 px-6 bg-slate-50 dark:bg-slate-900 relative border-t border-slate-200 dark:border-slate-800"
+      className="py-24 px-6 bg-slate-50 dark:bg-slate-900 relative border-t border-slate-200 dark:border-slate-700"
     >
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
@@ -19,11 +19,11 @@ export const AboutSection = () => {
           <div className="inline-block px-4 py-1.5 rounded-full bg-accent-100 dark:bg-accent-900/40 text-accent-700 dark:text-accent-300 font-semibold text-sm mb-6 border border-accent-200 dark:border-accent-800">
             Our Mission
           </div>
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-foreground mb-8 leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white mb-8 leading-tight">
             Democratizing{" "}
             <span className="text-gradient">Entrepreneurship</span> in Indonesia
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
+          <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-6 font-medium">
             The first year of business is terrifying. High failure rates are
             mostly driven by bad planning and lack of transparent information.
           </p>
@@ -35,12 +35,12 @@ export const AboutSection = () => {
             success.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 pt-16 border-t border-slate-200 dark:border-slate-800">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 pt-16 border-t border-slate-200 dark:border-slate-700">
             <div className="flex flex-col gap-2">
               <div className="text-5xl font-black text-primary-600 dark:text-primary-400 tracking-tight">
                 60M+
               </div>
-              <div className="text-slate-500 font-bold uppercase tracking-widest text-sm">
+              <div className="text-slate-600 dark:text-slate-400 font-bold uppercase tracking-widest text-sm">
                 MSMEs in Indonesia
               </div>
             </div>
@@ -48,7 +48,7 @@ export const AboutSection = () => {
               <div className="text-5xl font-black text-secondary-500 dark:text-secondary-400 tracking-tight">
                 1st
               </div>
-              <div className="text-slate-500 font-bold uppercase tracking-widest text-sm">
+              <div className="text-slate-600 dark:text-slate-400 font-bold uppercase tracking-widest text-sm">
                 Platform of Its Kind
               </div>
             </div>
@@ -56,7 +56,7 @@ export const AboutSection = () => {
               <div className="text-5xl font-black text-accent-500 dark:text-accent-400 tracking-tight">
                 100%
               </div>
-              <div className="text-slate-500 font-bold uppercase tracking-widest text-sm">
+              <div className="text-slate-600 dark:text-slate-400 font-bold uppercase tracking-widest text-sm">
                 Transparent Pricing
               </div>
             </div>

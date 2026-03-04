@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import { cn } from "../atoms/InputField";
 
 interface FormGroupProps {
   label: string;
@@ -20,7 +19,7 @@ export const FormGroup: React.FC<FormGroupProps> = ({
     <div className="flex flex-col gap-2 w-full mb-5">
       <label
         htmlFor={htmlFor}
-        className="font-medium text-[0.95rem] text-foreground inline-flex items-center gap-1"
+        className="font-semibold text-[0.95rem] text-slate-800 dark:text-slate-200 inline-flex items-center gap-1"
       >
         {label}
         {required && <span className="text-red-500">*</span>}

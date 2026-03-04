@@ -104,7 +104,7 @@ export const WaitlistForm = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl rounded-2xl p-10 text-center w-full max-w-[500px] mx-auto border border-accent-500/20 shadow-xl shadow-accent-500/10 relative z-20"
+        className="bg-white dark:bg-slate-900 rounded-3xl p-10 text-center w-full max-w-[500px] mx-auto border border-slate-200 dark:border-slate-700 shadow-2xl relative z-20"
       >
         <motion.div
           initial={{ scale: 0 }}
@@ -126,7 +126,7 @@ export const WaitlistForm = () => {
 
   return (
     <motion.form
-      className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl border border-white/20 dark:border-slate-800/60 shadow-2xl rounded-3xl p-6 sm:p-10 w-full max-w-[650px] mx-auto relative z-20"
+      className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-xl rounded-3xl p-6 sm:p-10 w-full max-w-[650px] mx-auto relative z-20 group/form"
       onSubmit={handleSubmit}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
@@ -247,16 +247,16 @@ export const WaitlistForm = () => {
       </FormGroup>
 
       <div className="mt-8 mb-8">
-        <label className="flex items-start gap-4 cursor-pointer group p-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors border border-transparent hover:border-slate-200 dark:hover:border-slate-800">
+        <label className="flex items-start gap-4 cursor-pointer group p-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
           <input
             type="checkbox"
             name="agreed"
             checked={formData.agreed}
             onChange={handleChange}
             disabled={isSubmitting}
-            className="mt-1 w-5 h-5 rounded border-2 border-slate-300 dark:border-slate-600 text-primary-600 focus:ring-primary-500 disabled:opacity-50 transition-colors"
+            className="mt-1 min-w-5 w-5 h-5 rounded border-2 border-slate-300 dark:border-slate-600 text-primary-600 focus:ring-primary-500 disabled:opacity-50 transition-colors"
           />
-          <span className="text-sm sm:text-[0.95rem] text-slate-600 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors leading-relaxed">
+          <span className="text-sm sm:text-[0.95rem] font-medium text-slate-700 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white transition-colors leading-relaxed">
             {waitlistData.form.checkboxLabel}
           </span>
         </label>
@@ -268,7 +268,7 @@ export const WaitlistForm = () => {
       </div>
 
       {errors.submit && (
-        <div className="p-4 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800/50 text-red-600 dark:text-red-400 rounded-xl mb-6 text-center font-medium">
+        <div className="p-4 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 text-red-600 dark:text-red-400 rounded-xl mb-6 text-center font-medium">
           {errors.submit}
         </div>
       )}
@@ -276,7 +276,7 @@ export const WaitlistForm = () => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold text-lg rounded-xl shadow-lg shadow-primary-500/20 transition-all active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-3"
+        className="w-full py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold text-lg rounded-xl shadow-lg shadow-primary-500/25 transition-all hover:shadow-primary-500/40 active:scale-[0.98] hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-3 relative overflow-hidden"
       >
         {isSubmitting ? (
           <>

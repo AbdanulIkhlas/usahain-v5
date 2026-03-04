@@ -8,9 +8,9 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-[95vh] flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden">
       {/* Softer Background Gradients */}
-      <div className="absolute inset-0 overflow-hidden -z-10 bg-background">
-        <div className="absolute top-0 right-0 w-[80vw] max-w-[800px] aspect-square rounded-full bg-primary-400/5 blur-[120px] -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-[60vw] max-w-[600px] aspect-square rounded-full bg-secondary-400/5 blur-[100px] translate-y-1/3 -translate-x-1/4" />
+      <div className="absolute inset-0 overflow-hidden -z-10 bg-white dark:bg-slate-950">
+        <div className="absolute top-0 right-0 w-[80vw] max-w-[800px] aspect-square rounded-full bg-primary-400/8 blur-[120px] -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-[60vw] max-w-[600px] aspect-square rounded-full bg-secondary-400/8 blur-[100px] translate-y-1/3 -translate-x-1/4" />
 
         {/* Subtle grid pattern for texture */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMTQ4LCAxNjMsIDE4NCwgMC4xNSkiLz48L3N2Zz4=')] [mask-image:radial-gradient(ellipse_at_center,white,transparent_80%)] opacity-40 dark:opacity-10" />
@@ -21,7 +21,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-primary-200/50 dark:border-primary-900/50 text-primary-700 dark:text-primary-300 font-semibold text-sm mb-8 shadow-sm"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-primary-200 dark:border-primary-800 text-primary-700 dark:text-primary-300 font-semibold text-sm mb-8 shadow-sm"
         >
           <span className="relative flex h-2.5 w-2.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
@@ -66,7 +66,7 @@ export const HeroSection = () => {
 
           <Link
             href="/waitlist"
-            className="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-slate-700 dark:text-white bg-white dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 text-lg"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-slate-700 dark:text-white bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 text-lg"
           >
             Join Waitlist
           </Link>

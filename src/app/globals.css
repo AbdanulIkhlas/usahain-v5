@@ -4,36 +4,37 @@
 @layer base {
   :root {
     --background: #ffffff;
-    --foreground: #0f172a;
-    --radius: 0.5rem;
+    --foreground: #1e293b;
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: #0b0f19; /* Slightly deeper dark mode for better contrast */
-    --foreground: #f8fafc;
+    --background: #020617;
+    --foreground: #e2e8f0;
   }
 }
 
 @layer base {
   * {
-    @apply border-gray-200 dark:border-slate-800/60; /* Softer borders */
+    @apply border-slate-200 dark:border-slate-700;
   }
   body {
-    @apply bg-background text-foreground antialiased min-h-screen selection:bg-primary-200 selection:text-primary-900 dark:selection:bg-primary-900/50 dark:selection:text-primary-100;
+    @apply bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-200 antialiased min-h-screen;
+    font-family: var(--font-inter), system-ui, sans-serif;
   }
 }
 
 /* Custom Gradients & Shadows */
 @layer utilities {
   .glass-effect {
-    @apply bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-white/40 dark:border-slate-800/60 shadow-xl shadow-slate-200/50 dark:shadow-black/20;
+    @apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200 dark:border-slate-700 shadow-xl;
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-500 dark:from-primary-400 dark:to-secondary-400;
+    @apply bg-clip-text text-transparent bg-linear-to-r from-primary-600 to-secondary-500 dark:from-primary-400 dark:to-secondary-400;
   }
 
   .text-gradient-accent {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-600 to-primary-500 dark:from-accent-400 dark:to-primary-400;
+    @apply bg-clip-text text-transparent bg-linear-to-r from-accent-500 to-primary-500 dark:from-accent-400 dark:to-primary-400;
   }
 }

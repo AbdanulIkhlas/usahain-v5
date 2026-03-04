@@ -11,7 +11,7 @@ import { Footer } from "@/components/organisms/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-200">
       <Navbar />
       <main className="flex-1 w-full overflow-hidden">
         <HeroSection />

@@ -21,17 +21,17 @@ export const CommunitySection = () => {
             transition={{ duration: 0.7 }}
           >
             {/* Visual background grid */}
-            <div className="absolute inset-0 bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 flex items-center justify-center overflow-hidden">
+            <div className="absolute inset-0 bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-700 flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-70" />
               <Users className="w-40 h-40 text-primary-200 dark:text-primary-900/40 relative z-0" />
 
               <div className="absolute top-[15%] right-[-5%] bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 shadow-xl flex items-center gap-4 animate-float z-10 w-64">
                 <CheckCircle2 className="w-8 h-8 text-emerald-500 shrink-0" />
                 <div>
-                  <div className="text-sm font-bold text-foreground">
+                  <div className="text-sm font-bold text-slate-900 dark:text-white">
                     Sales Milestone
                   </div>
-                  <div className="text-xs text-slate-500 font-medium tracking-wide">
+                  <div className="text-xs text-slate-500 dark:text-slate-400 font-medium tracking-wide">
                     100th cup sold today! 🎉
                   </div>
                 </div>
@@ -40,11 +40,11 @@ export const CommunitySection = () => {
               <div className="absolute bottom-[20%] left-[-10%] bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 shadow-xl flex items-center gap-4 animate-float z-10 w-72 [animation-delay:-3s]">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-secondary-400 to-primary-500 shrink-0" />
                 <div>
-                  <div className="text-sm font-bold text-foreground">
+                  <div className="text-sm font-bold text-slate-900 dark:text-white">
                     Budi (Kopi Gerobak)
                   </div>
-                  <div className="text-xs text-slate-500 italic">
-                    "USAHAin saved me 30% capital"
+                  <div className="text-xs text-slate-500 dark:text-slate-400 italic">
+                    &quot;USAHAin saved me 30% capital&quot;
                   </div>
                 </div>
               </div>
@@ -63,10 +63,10 @@ export const CommunitySection = () => {
             <div className="inline-block px-4 py-1.5 rounded-full bg-primary-100 dark:bg-primary-900/40 text-primary-600 dark:text-primary-300 font-semibold text-sm mb-6 border border-primary-200 dark:border-primary-800">
               Komunitas
             </div>
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-foreground mb-6 leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight">
               You Are <span className="text-gradient-accent">Not Alone</span>
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
               Starting a business is lonely and intimidating. Our community is
               designed to help you exchange knowledge, find mentorship, and
               celebrate early wins together.
@@ -79,7 +79,7 @@ export const CommunitySection = () => {
               ].map((item, idx) => (
                 <li
                   key={idx}
-                  className="flex items-center gap-3 text-lg font-medium text-foreground"
+                  className="flex items-center gap-3 text-lg font-medium text-slate-800 dark:text-slate-100"
                 >
                   <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary-100 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400 font-bold text-sm">
                     ✓
